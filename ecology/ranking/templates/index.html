@@ -1,0 +1,219 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CONSERVATION OF ELECTRICITY</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/favicons/apple-touch-icon-57x57.png' %}">
+	<link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/favicons/apple-touch-icon-60x60.png' %}">
+	<link rel="icon" type="image/png" href="{% static 'img/favicons/favicon-32x32.png' %}" sizes="32x32">
+	<link rel="icon" type="image/png" href="{% static 'img/favicons/favicon-16x16.png' %}" sizes="16x16">
+	<link rel="manifest" href="{% static 'img/favicons/manifest.json' %}"">
+	<link rel="shortcut icon" href="{% static 'img/favicons/favicon.ico' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/owl.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.1.0/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/eleganticons/et-icons.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+<body id = "conserve">
+<body>
+	<div class="preloader">
+		<img src="{% static 'img/loader.gif' %}" alt="Preloader image">
+	</div>
+	<nav class="navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href=""><img src="{% static 'img/logo-active.png' %}" style="z-index:-2;margin-top:-8%;border-radius: 2%;"  data-active-url="{% static 'img/logo-active.png' %}" alt=""></a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					
+					<li><a href="#intro">Home</a></li>
+					<li><a href="#team">Ranks</a></li>
+					<li><a href="#history">Previous Ranks</a></li>
+					<li><a href="#">Recommendation system</a></li>
+					<li><a href="#contact">Contact Us</a></li>	
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header id="intro">
+		<div class="container">
+			<div class="table">
+				<div class="header-text">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h3 class="light white">Conserve Electricity</h3>
+							<h1 class="white typed">Today's wastage is tomorrow's shortage.</h1>
+							<span class="typed-cursor">|</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>	
+	<section id="team" class="section gray-bg" style="background-color:aqua">
+		<div class="container" >
+			<div class="row title text-center">
+				<h2 class="margin-top">Rankings</h2>
+				<h4 class="light muted">{{ date_day_year }}</h4>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="team text-center">
+						<div class="cover" style="background-color:rgb(255, 215, 0); background-size:cover;">
+							<div class="overlay text-center">
+								<h3 class="white">1st Rank</h3>
+							</div>
+						</div>
+						<img src="{% static 'img/team/badge.png' %}" alt="Team Image" class="avatar">
+						<div class="title">
+							<h4>Room {{ rank1 }}</h4>
+							<h5 class="muted regular">{{ units1 }} units consumed</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="team text-center">
+						<div class="cover" style="background-color: #c0c0c0 ; background-size:cover;">
+							<div class="overlay text-center">
+								<h3 class="white">2nd Rank</h3>
+							</div>
+						</div>
+						<img src="{% static 'img/team/badge.png' %}" alt="Team Image" class="avatar">
+						<div class="title">
+							<h4>Room {{ rank2 }}</h4>
+							<h5 class="muted regular">{{ units2 }} units consumed</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="team text-center">
+						<div class="cover" style="background-color:#cd7f32; background-size:cover;">
+							<div class="overlay text-center">
+								<h3 class="white">3rd Rank</h3>
+							</div>
+						</div>
+						<img src="{% static 'img/team/badge.png' %}" alt="Team Image" class="avatar">
+						<div class="title">
+							<h4>Room {{ rank3 }}</h4>
+							<h5 class="muted regular">{{ units3 }} units consumed</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	<section id="history" class="section section-padded" style="background-color:rgb(255, 201, 204)">
+		<div class="container">
+			<div class="row text-center title">
+				<h2 style="color:white;">Services</h2>
+				<h4 class="light muted">Achieve the best results with our wide variety of training options!</h4>
+			</div>
+			<div class="row services">
+				<div class="col-md-4">
+					<div class="service" style="background-color:aqua ;">
+						<div class="icon-holder">
+							<img src="{% static  'img/icons/heart-blue.png' %}" alt="" class="icon">
+						</div>
+						<h4 class="heading">{{ 1month }}</h4>
+						<p class="description">Room - {{ 1rank1 }}<br>
+							Room - {{ 1rank2 }}<br>
+							Room - {{ 1rank3 }}<br>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service"  style="background-color:aqua ;">
+						<div class="icon-holder">
+							<img src="{% static 'img/icons/guru-blue.png' %}" alt="" class="icon">
+						</div>
+						<h4 class="heading">{{ 2month }}</h4>
+						<p class="description">Room - {{ 2rank1 }}<br>
+							Room - {{ 2rank2 }}<br>
+							Room - {{ 2rank3 }}<br>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service"  style="background-color:aqua ;">
+						<div class="icon-holder" >
+							<img src="{% static 'img/icons/weight-blue.png' %}" alt="" class="icon">
+						</div>
+						<h4 class="heading">{{ 3month }}</h4>
+						<p class="description">
+								Room - {{ 3rank1 }}<br>
+								Room - {{ 3rank2 }}<br>
+								Room - {{ 3rank3 }}<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class=""></div>
+	</section>
+	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modal-popup">
+				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+				<h3 class="white">Drop your query here</h3>
+				<form action="{% url 'main_method' %}" method='POST' class="popup-form">
+					{% csrf_token %}
+					<input type="text" name="fullname" class="form-control form-white" placeholder="Full Name">
+					<input type="text" name="email" class="form-control form-white" placeholder="Email Address">
+					<input type="text" name="phone" class="form-control form-white" placeholder="Phone Number">
+					<input type="text" name="query" class="form-control form-white" rows="3" placeholder="Write your query here"></textarea>
+					<button type="submit" class="btn btn-submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<section id="contact" class="section">
+	<footer id="overridefooter" >
+		<div class="container">
+			<div class="row">
+				<button type="button" class="btn btn-outline-light" style:"margin:auto;color:black;font-weight:600;"  data-toggle="modal" data-target="#modal1" style="background-color:white;color:black;margin-left:3%;">Contact us</button>
+			</div>
+			<div class=" bottom-footer text-center-mobile">
+				<div class="col-sm-8">
+					<p>&copy; 2019 All Rights Reserved. Powered by <a href="#"><b>Sripranav Mannepalli</b> and <b>Chirag Gupta</b></a> exclusively for <a href="#"><b>IIT TIRUPATI</b></a></p>
+				</div>
+				<div class="col-sm-4 text-right text-center-mobile">
+					<ul class="social-footer">
+						<li><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+    </section>
+	<!-- Holder for mobile navigation -->
+	<div class="mobile-nav">
+		<ul>
+		</ul>
+		<a href="#" class="close-link"><i class="arrow_up"></i></a>
+	</div>
+	<!-- Scripts -->
+	<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/wow.min.js' %}"></script>
+	<script src="{% static 'js/typewriter.js' %}"></script>
+	<script src="{% static 'js/jquery.onepagenav.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+</body>
+</html>
