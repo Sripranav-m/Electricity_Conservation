@@ -109,6 +109,14 @@ header {
 	background: url('../img/icons/bcg.jpeg');
 	background-size: cover;
 }
+#team{
+	background: white;
+	/* background: url('../iittp.png'); */
+	background-size: cover;
+	
+}
+
+
 #services{
 	background-color:rgb(112, 112, 112);
 }
@@ -519,12 +527,36 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	height: 250px;
 	padding-top: 60px;
 	opacity: 0;
-	background: rgba(0, 168, 255, 0.9);
+	
 	-webkit-transition: opacity 0.45s ease;
 	transition: opacity 0.45s ease;
 }
-
-.team:hover .cover .overlay {
+.hstl{
+	background: url(../hostel1.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	border-radius: 30px;
+}
+.team{
+	border-radius:30px;
+}
+.hstl2{
+	background: url(../hostel2.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	border-radius: 30px;
+}
+.hstl3{
+	background: url(../hostel3.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	border-radius: 30px;
+}
+.team{
+	background: url(../hostel.jpg);
+	float: middle;
+}
+.team .cover .overlay {
 	opacity: 1;
 }
 
@@ -648,7 +680,7 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 
 footer {
 	padding: 140px 0 40px;
-	background-color:rgb(174, 242, 238);
+	/* background-color:rgb(174, 242, 238); */
 	background-size: cover;
 }
 
@@ -672,6 +704,12 @@ footer .open-blink {
 	animation-duration: 1s;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
+}
+.conta{
+	border-radius:22px;
+}
+.conta:hover{
+	background-color:green;
 }
 
 footer .open-blink:before {
@@ -805,7 +843,6 @@ footer .social-footer li:hover a {
 	content: '\f0d7';
 	font-family: 'FontAwesome';
 	display: inline-block;
-	float: right;
 	color: white;
 }
 
@@ -1114,9 +1151,10 @@ body {
 	width:100%;
 }
 #contact{
-	background-color:rgb(174, 242, 238);
+	/* background-color:rgb(174, 242, 238); */
 }
-
-
+#month_main{
+	color:black;
+}
 
 

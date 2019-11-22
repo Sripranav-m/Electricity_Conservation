@@ -6,12 +6,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CONSERVATION OF ELECTRICITY</title>
-	<link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/favicons/apple-touch-icon-57x57.png' %}">
-	<link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/favicons/apple-touch-icon-60x60.png' %}">
-	<link rel="icon" type="image/png" href="{% static 'img/favicons/favicon-32x32.png' %}" sizes="32x32">
-	<link rel="icon" type="image/png" href="{% static 'img/favicons/favicon-16x16.png' %}" sizes="16x16">
 	<link rel="manifest" href="{% static 'img/favicons/manifest.json' %}"">
-	<link rel="shortcut icon" href="{% static 'img/favicons/favicon.ico' %}">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/owl.css' %}">
@@ -42,8 +40,8 @@
 					<li><a href="#intro">Home</a></li>
 					<li><a href="#team">Ranks</a></li>
 					<li><a href="#history">Previous Ranks</a></li>
-					<li><a href="#">Recommendation system</a></li>
-					<li><a href="#contact">Contact Us</a></li>	
+					<li><a href="#">Recommendation System</a></li>
+					<li><a href="#contact">Queries?</a></li>	
 				</ul>
 			</div>
 		</div>
@@ -54,7 +52,7 @@
 				<div class="header-text">
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<h3 class="light white">Conserve Electricity</h3>
+							<h3 class="light white">CONSERVE ELECTRICITY</h3>
 							<h1 class="white typed">Today's wastage is tomorrow's shortage.</h1>
 							<span class="typed-cursor">|</span>
 						</div>
@@ -63,35 +61,35 @@
 			</div>
 		</div>
 	</header>	
-	<section id="team" class="section gray-bg" style="background-color:aqua">
+	<section id="team" class="section gray-bg " style="background-color:#d4fdff;	"  >
 		<div class="container" >
 			<div class="row title text-center">
-				<h2 class="margin-top">Rankings</h2>
-				<h4 class="light muted">{{ date_day_year }}</h4>
+				<h2 class="margin-top" style="font-size:80px ;font-family: 'Playfair Display', serif;"><b>RANKINGS</b></h2>
+				<h4 class="light muted" style="color:black;"><b>{{ date_day_year }}</b></h4>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<div class="team text-center">
-						<div class="cover" style="background-color:rgb(255, 215, 0); background-size:cover;">
-							<div class="overlay text-center">
-								<h3 class="white">1st Rank</h3>
+					<div class="team text-center" style="background-color:#ecebf0;">
+						<div class="cover" id="month_main" style=" background-size:cover;">
+							<div class="overlay text-center hstl" > 
+								<h3 class="white"></h3>
 							</div>
 						</div>
-						<img src="{% static 'img/team/badge.png' %}" alt="Team Image" class="avatar">
-						<div class="title">
+						<img src="{% static 'img/team/badge1.png' %}" alt="Team Image" class="avatar">
+						<div class="title" stlye="background-color:aqua;">
 							<h4>Room {{ rank1 }}</h4>
 							<h5 class="muted regular">{{ units1 }} units consumed</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="team text-center">
-						<div class="cover" style="background-color: #c0c0c0 ; background-size:cover;">
-							<div class="overlay text-center">
-								<h3 class="white">2nd Rank</h3>
+					<div class="team text-center"  style="background-color:#ecebf0">
+						<div class="cover" style=" background-size:cover;">
+							<div class="overlay text-center hstl2">
+								<h3 class="white"></h3>
 							</div>
 						</div>
-						<img src="{% static 'img/team/badge.png' %}" alt="Team Image" class="avatar">
+						<img src="{% static 'img/team/badge2.png' %}" alt="Team Image" class="avatar">
 						<div class="title">
 							<h4>Room {{ rank2 }}</h4>
 							<h5 class="muted regular">{{ units2 }} units consumed</h5>
@@ -99,13 +97,13 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="team text-center">
-						<div class="cover" style="background-color:#cd7f32; background-size:cover;">
-							<div class="overlay text-center">
-								<h3 class="white">3rd Rank</h3>
+					<div class="team text-center" style="background-color:#ecebf0">
+						<div class="cover" style=" background-size:cover;">
+							<div class="overlay text-center hstl3">
+								<h3 class="white"></h3>
 							</div>
 						</div>
-						<img src="{% static 'img/team/badge.png' %}" alt="Team Image" class="avatar">
+						<img src="{% static 'img/team/badge3.png' %}" alt="Team Image" class="avatar">
 						<div class="title">
 							<h4>Room {{ rank3 }}</h4>
 							<h5 class="muted regular">{{ units3 }} units consumed</h5>
@@ -115,47 +113,47 @@
 			</div>
 		</div>
 	</section>	
-	<section id="history" class="section section-padded" style="background-color:rgb(255, 201, 204)">
+	<section id="history" class="section section-padded" style="background-image:linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);">
 		<div class="container">
 			<div class="row text-center title">
-				<h2 style="color:white;">Services</h2>
-				<h4 class="light muted">Achieve the best results with our wide variety of training options!</h4>
+				<h2 style="color:black;">PAST WINNERS</h2>
+				<h4 class="light muted" style="color:white;"><b>Past Three Months Ranks of Rooms According to their Electricity Consumption</b></h4>
 			</div>
 			<div class="row services">
-				<div class="col-md-4">
-					<div class="service" style="background-color:aqua ;">
+				<div class="col-md-4" >
+					<div class="service" style="background-color:#f5f9ff;border-radius:30px; ;">
 						<div class="icon-holder">
 							<img src="{% static  'img/icons/heart-blue.png' %}" alt="" class="icon">
 						</div>
 						<h4 class="heading">{{ 1month }}</h4>
-						<p class="description">Room - {{ 1rank1 }}<br>
-							Room - {{ 1rank2 }}<br>
-							Room - {{ 1rank3 }}<br>
+						<p class="description">1- Room  {{ 1rank1 }}<br>
+							2- Room  {{ 1rank2 }}<br>
+							3- Room  {{ 1rank3 }}<br>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="service"  style="background-color:aqua ;">
+					<div class="service"  style="background-color:#f5f9ff;border-radius:30px; ;">
 						<div class="icon-holder">
 							<img src="{% static 'img/icons/guru-blue.png' %}" alt="" class="icon">
 						</div>
 						<h4 class="heading">{{ 2month }}</h4>
-						<p class="description">Room - {{ 2rank1 }}<br>
-							Room - {{ 2rank2 }}<br>
-							Room - {{ 2rank3 }}<br>
+						<p class="description">1- Room  {{ 2rank1 }}<br>
+							2- Room  {{ 2rank2 }}<br>
+							3- Room  {{ 2rank3 }}<br>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="service"  style="background-color:aqua ;">
+					<div class="service"  style="background-color:#f5f9ff;border-radius:30px; ;">
 						<div class="icon-holder" >
 							<img src="{% static 'img/icons/weight-blue.png' %}" alt="" class="icon">
 						</div>
 						<h4 class="heading">{{ 3month }}</h4>
 						<p class="description">
-								Room - {{ 3rank1 }}<br>
-								Room - {{ 3rank2 }}<br>
-								Room - {{ 3rank3 }}<br>
+								1- Room  {{ 3rank1 }}<br>
+								2- Room  {{ 3rank2 }}<br>
+								3- Room  {{ 3rank3 }}<br>
 						</p>
 					</div>
 				</div>
@@ -179,15 +177,15 @@
 			</div>
 		</div>
 	</div>
-	<section id="contact" class="section">
+	<section id="contact" class="section" style="background-color:#4554ff" >
 	<footer id="overridefooter" >
 		<div class="container">
 			<div class="row">
-				<button type="button" class="btn btn-outline-light" style:"margin:auto;color:black;font-weight:600;"  data-toggle="modal" data-target="#modal1" style="background-color:white;color:black;margin-left:3%;">Contact us</button>
+				<button type="button" class="btn conta" style:"margin:auto;color:black;font-weight:600;border-radius:30px;"  data-toggle="modal" data-target="#modal1" style="background-color:white;color:black;margin-left:3%;">Contact us</button>
 			</div>
 			<div class=" bottom-footer text-center-mobile">
-				<div class="col-sm-8">
-					<p>&copy; 2019 All Rights Reserved. Powered by <a href="#"><b>Sripranav Mannepalli</b> and <b>Chirag Gupta</b></a> exclusively for <a href="#"><b>IIT TIRUPATI</b></a></p>
+				<div class="col-sm-8" style="color:white;">
+					<p style="color:white;">&copy; 2019 All Rights Reserved.<br> Powered by <a href="#"><b style="color:white;">Sripranav Mannepalli</b> , <b style="color:white;">Chirag Gupta</b> , <b style="color:white;">Nitin Nirmal</b> and <b style="color:white;">Surya Sai</b> </a><br> exclusively for <a href="#"><b style="color:white;">IIT TIRUPATI</b></a></p>
 				</div>
 				<div class="col-sm-4 text-right text-center-mobile">
 					<ul class="social-footer">
