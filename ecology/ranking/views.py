@@ -1,7 +1,9 @@
 from django.shortcuts import render
+from django.http import FileResponse
 from django.views import View
 from .models import ranking,query
 from datetime import date
+import os
 
 
 def main_method(request):
@@ -50,3 +52,9 @@ def main_method(request):
     except:
         maindict={'1rank1':"--",'1rank2':"--",'1rank3':"--",'2rank1':"--",'2rank2':"--",'2rank3':"--",'3rank1':"--",'3rank2':"--",'3rank3':"--",'1month':"--",'2month':"--",'3month':"--",'rank1':"--",'rank2':"--",'rank3':"--",'units1':"--",'units2':"--",'units3':"--"}
     return render(request,"index.html",maindict)
+
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+def render_survey(request):
+    return FileResponse(open(os.path.join(BASE_DIR,'ranking/static/survey.pdf'), 'rb'), content_type='application/pdf')
